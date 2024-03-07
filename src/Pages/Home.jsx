@@ -2,6 +2,7 @@ import {React,useRef,useEffect} from "react";
 import { useMasterContext } from '../components/MasterContext';
 import { CustomSelect } from '../components/CustomSelect';
 import { PortfolioData } from "../data/PortfolioData";
+import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import $ from 'jquery';
@@ -9,6 +10,7 @@ import $ from 'jquery';
 export const Home = () => {
     const form = useRef();
     const {setloader} = useMasterContext();
+    const navigate = useNavigate();
 
     useEffect(() => {
         $('.form-control').each(function () {
@@ -43,7 +45,7 @@ export const Home = () => {
                     $('.InptFld input,textarea').each(function(){
                         $(this).removeClass('valid');
                     });
-                    window.location.href='https://thekmr89.github.io/codekmr/thank-you/';
+                    navigate('/codekmr/thank-you');
                     setloader(null);
                 })
                 .catch((error) => {
@@ -63,7 +65,6 @@ export const Home = () => {
                             <h1>Crafted Code,<br />Elegant Design</h1>
                             <p>Hello, I am <b>Susheel Kumar</b> a Passionate full-stack web developer, seamlessly blending design and code to craft visually stunning and functionally robust websites.</p>
                             <div className="btn"><button onClick={() =>  document.querySelector('.homeSecA').scrollIntoView({ behavior: 'smooth' })}>View Portfolio</button></div>
-                            <div className="btn"><Link to={'/codekmr/thank-you'}>Thank You</Link></div>
                         </div>
                     </div>
                 </div>

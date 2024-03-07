@@ -5,6 +5,7 @@ import './assets/sass/style.css';
 import './assets/font/font.css';
 import { Home } from './Pages/Home';
 import { Thanks } from './Pages/Thanks';
+import { PageNotFound } from './Pages/PageNotFound';
 import { Footer } from './components/Footer';
 import { MasterContext } from './components/MasterContext';
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/codekmr" element={<Home />} />
           <Route path="/codekmr/thank-you" element={<Thanks />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </MasterContext>
