@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'MonaSansLight';
+    src: url('./MonaSans-Light.woff2') format('woff2'),
+        url('./MonaSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonaSansMedium';
+    src: url('./MonaSans-Medium.woff2') format('woff2'),
+        url('./MonaSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonaSansRegular';
+    src: url('./MonaSans-Regular.woff2') format('woff2'),
+        url('./MonaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonaSansSemiBold';
+    src: url('./MonaSans-SemiBold.woff2') format('woff2'),
+        url('./MonaSans-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonaSansBold';
+    src: url('MonaSans-Bold.woff2') format('woff2'),
+        url('MonaSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonaSansExtraBold';
+    src: url('./MonaSans-ExtraBold.woff2') format('woff2'),
+        url('./MonaSans-ExtraBold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

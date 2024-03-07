@@ -1,0 +1,454 @@
+main
+    --padleft: 100px
+    @include respond-to(screen-1280)
+        --padleft: 4rem
+    @include respond-to(screen-767)
+        --padleft: 0
+.banner
+    &.home-banner
+        background: $black2
+        padding-top: var(--headerheight)
+        height: 100vh
+        position: relative
+        overflow: hidden
+        @include respond-to(screen-1280)
+            height: auto
+        .container
+            position: relative
+            z-index: 1
+            display: flex
+            align-items: center
+        &::before,&::after
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            pointer-events: none
+            user-select: none
+            z-index: 0
+        &::after
+            background: linear-gradient(90deg, $black2 0%, transparent 100%)
+        .content
+            max-width: 590px
+            margin-left: var(--padleft)
+            position: relative
+            z-index: 1
+            padding: 100px 0
+            @include respond-to(screen-767)
+                padding: 60px 0
+            h1,p
+                color: $white
+            p
+                font-family: $MonaSansL
+                margin: 25px 0 45px
+            .btn
+                display: inline-block
+                --btnshadow: 6px
+                button
+                    width: auto
+                    text-transform: uppercase
+                    display: block
+                    font-family: $MonaSansM
+                    font-size: 16px
+                    padding: 15px 50px
+                    border-width: 1px
+                    @include respond-to(screen-1280)
+                        padding: 13px 35px
+                        font-size: 14px
+.homeSecA
+    background: $black2
+    .model-body
+        display: flex
+        flex-wrap: wrap
+        position: relative
+        padding: 65px 0 100px
+        @include respond-to(screen-991)
+            flex-direction: column
+            gap: 40px
+        @include respond-to(screen-767)
+            padding: 15px 0 55px
+        .heading
+            padding-bottom: 60px
+            padding-left: var(--padleft)
+            @include respond-to(screen-991)
+                padding-bottom: 35px
+            h3
+                color: $white
+                text-transform: uppercase
+                font-size: 18px
+                position: relative
+                font-family: $MonaSansB
+                span
+                    display: block
+                    font-size: 40px
+                    color: transparent
+                    -webkit-text-stroke: 1px $white
+                    @include respond-to(screen-1024)
+                        font-size: 25px
+        .col
+            position: relative
+            --btnsize: 20px
+            --btnwidth: 2px
+            padding-left: var(--padleft)
+            &:not(:last-child)
+                padding-bottom: 20px 
+            &::before
+                content: ''
+                position: absolute
+                left: calc((var(--btnsize) / 2 ) * -1  )
+                top: 0
+                height: var(--btnsize)
+                width: var(--btnsize)
+                border-radius: 50%
+                background: $black2
+                border: var(--btnwidth) solid $white
+                @include respond-to(screen-767)
+                    display: none
+            span
+                display: block
+                opacity: .7
+                font-family: $MonaSansL
+                padding-bottom: 12px
+            h4
+                @include respond-to(screen-520)
+                    font-size: 16px
+                    line-height: 1.3
+            h4,p,span
+                font-family: $Ubantu
+                color: $white
+            progress[value]
+                appearance: none
+                --radius: 0px
+                height: 8px
+                margin-bottom: auto
+                margin-top: auto
+                &::-webkit-progress-bar
+                    background: #ffffff47
+                    border-radius: var(--radius)
+                &::-webkit-progress-value
+                    background: $white
+                    border-radius: var(--radius)
+                @include respond-to(screen-520)
+                    width: 100%
+            .col-md-sec
+                display: grid
+                grid-template-columns: repeat(2,1fr)
+                grid-gap: 20px 0
+                @include respond-to(screen-1024)
+                    grid-template-columns: 100%
+                @include respond-to(screen-991)
+                    grid-template-columns: repeat(2,1fr)
+                @include respond-to(screen-520)
+                    grid-gap: 20px
+        .colA
+            flex: 0 1 auto
+        .colB
+            flex: 1
+            padding-left: 8rem
+            @include respond-to(screen-1280)
+                padding-left: 4rem
+            @include respond-to(screen-991)
+                padding-left: 0
+            .heading
+                padding-left: 0
+            .headS
+                display: flex
+                flex-wrap: wrap
+                --flexsize: 75px
+                gap: 0 25px
+                align-items: center
+                .icon
+                    flex: 0 1 var(--flexsize)
+                    border-radius: 50%
+                    overflow: hidden
+                    img
+                        width: 100%
+                        height: var(--flexsize)
+                        object-fit: cover
+                .ttl
+                    h4,p
+                        color: $white
+                    p
+                        opacity: .7
+                    h4
+                        font-size: 36px
+                        font-family: $Ubantu
+                        line-height: 1.2
+                        @include respond-to(screen-520)
+                            font-size: 28px
+            .content
+                margin: 25px 0 0
+                ul
+                    margin-top: 20px
+                    @include respond-to(screen-991)
+                        padding-left: 35px
+                    @include respond-to(screen-767)
+                        padding-left: 20px
+                    li
+                        list-style: disc
+                        &::marker
+                            color: $white
+                p,li
+                    color: $white
+                    font-family: $MonaSansL
+                b
+                    display: block
+                    margin: 14px 0 8px
+                .flex
+                    .col-ms
+                        flex: 1
+                        @include respond-to(screen-767)
+                            flex: 0 1 100%
+.homeSecB
+    background: $black2
+    .heading
+        padding-left: var(--padleft)
+        h3
+            color: $white
+    .gridWrap
+        padding: 45px 0 100px
+        padding-left: var(--padleft)
+        @include respond-to(screen-520)
+            padding: 45px 0
+        .grid
+            grid-template-columns: repeat(3,1fr)
+            grid-gap: 20px 25px
+            @include respond-to(screen-991)
+                grid-template-columns: repeat(2,1fr)
+            @include respond-to(screen-520)
+                grid-gap: 10px
+            @include respond-to(screen-320)
+                grid-template-columns: 100%
+            &:not(:last-of-type)
+                margin-bottom: 35px
+            .col
+                aspect-ratio: 1.5
+                overflow: hidden
+                position: relative
+                border-radius: 5px
+                overflow: hidden
+                @include respond-to(screen-520)
+                    border-radius: 2px
+                &:hover
+                    .web-link
+                        opacity: 1
+                        button
+                            transform: scale(1)
+                    figcaption
+                        transform: translateY(100%)
+                a
+                    appearance: none
+                    border: 0
+                    display: block
+                    height: 100%
+                    cursor: pointer
+                    figure,img
+                        height: 100%
+                img
+                    width: 100%
+                figcaption
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    z-index: 1
+                    padding: 12px 15px
+                    transition: opacity .2s ease,transform .5s ease
+                    opacity: 1
+                    background: rgb( 0 0 0 /83%)
+                    color: $white
+                    font-family: $MonaSansM
+                    letter-spacing: .5px
+                    @include respond-to(screen-520)
+                        letter-spacing: 0px
+                        font-size: 14px
+                        padding: 10px
+                .web-link
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    z-index: 1
+                    background: rgb( 0 0 0 /83%)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    opacity: 0
+                    transition: .5s ease
+                    button
+                        transform: scale(.8)
+                        appearance: none
+                        border: none
+                        background: none
+                        transition: inherit
+                        cursor: pointer
+                        img
+                            filter: invert(1)
+.inquirySec
+    background: $black2
+    z-index: 9
+    .inquirySecwrap
+        padding-left: var(--padleft)
+        padding-bottom: 80px
+        @include respond-to(screen-520)
+            padding-bottom: 40px
+        h3
+            color: $white
+            margin-bottom: 40px
+    form
+        text-align: center
+    .InptFld
+        --inputsize: 45px
+        --lrgap: 15px
+        --tbgap: 20px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: var(--tbgap) 0
+        @include respond-to(screen-520)
+            --tbgap: 18px
+        .form-group
+            flex: 0 1 calc(50% - var(--lrgap))
+            max-width: calc(50% - var(--lrgap))
+            width: 100%
+            position: relative
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+            &.flex100
+                flex: 0 1 100%
+                max-width: 100%
+                width: 100%
+            label
+                position: absolute
+                top: 50%
+                translate: 0 -50%
+                left: 0
+                color: $white
+                line-height: 1
+                transition: .3s ease
+                user-select: none
+                pointer-events: none
+            input,.custom-select
+                height: var(--inputsize)
+                &:focus,&.valid
+                    & ~ label
+                        top: 0
+                        font-size: 12px
+                        background: $black2
+            input[data-select]
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                pointer-events: none
+                user-select: none
+                opacity: 0
+            input,textarea,.custom-select > .current
+                resize: none
+                width: 100%
+                background: none
+                border: none
+                border-bottom: 1px solid #ffffff52
+                color: $white
+                font-size: inherit
+                font-family: inherit
+                option
+                    color: $black2
+                    font-weight: 500
+                &.valid
+                    border-color: $white
+                &:focus
+                    outline: none
+                    &::placeholder
+                        opacity: 1
+                &::placeholder
+                    font-size: 14px
+                    color: #ffffff6e
+                    font-family: inherit
+                    opacity: 0
+                    transition: .5s ease
+            textarea
+                min-height: 65px
+                padding-top: 15px
+            &.message-bx
+                label
+                    top: var(--varpad)
+                    translate: 0 0
+                textarea
+                    &:focus,&.valid 
+                        ~ label
+                            top: 0
+                            font-size: 12px
+                            translate: 0 -50%
+                            background: $black2
+            .custom-select
+                cursor: pointer
+                outline: none
+                position: relative
+                transition: all 0.2s ease-in-out
+                white-space: nowrap
+                background: url(../icon/arr2-white.png) no-repeat
+                background-position: 100% 50%
+                .current
+                    height: 100%
+                    user-select: none
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    color: $white
+                    em
+                        color: $black
+                        font-style: inherit
+                .list
+                    text-align: left
+                    background-color: $black2
+                    border: 1px solid $white
+                    overflow: hidden
+                    pointer-events: none
+                    max-height: 180px
+                    position: absolute
+                    top: 100%
+                    left: 0
+                    right: 0
+                    transform-origin: 50% 0
+                    opacity: 0
+                    transform: scale(0.75) translateY(-21px)
+                    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out
+                    z-index: 7
+                    overflow-y: auto
+                    &::-webkit-scrollbar
+                        width: 3px
+                    &::-webkit-scrollbar-thumb
+                        background: $primary
+                        border-radius: 5px
+                    li
+                        display: block
+                        padding: 11px 20px
+                        line-height: 1
+                        font-weight: 500
+                        color: $white
+                        &.selected
+                            background: #e2e2e2
+                        &:hover
+                            background: $white
+                            color: $black2
+                    &.open
+                        opacity: 1
+                        pointer-events: auto
+                        transform: scale(1) translateY(0)
+    .btn
+        margin-top: 45px
+        input
+            font-family: $MonaSans
+            text-transform: uppercase
+            padding: 12px 50px
+    .message
+        color: $white
+        font-size: 18px
+        padding-top: 35px
+

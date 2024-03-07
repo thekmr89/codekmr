@@ -1,0 +1,134 @@
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 5
+    transition: .3s ease
+    background: $black2
+    &.header-fixed
+        .header-wrapper
+            padding: 12px 0
+            .flex
+                .colA
+                    .logo
+                        img
+                            filter: invert(1)
+                .colB
+                    .social-icon
+                        li
+                            a
+                                svg
+                                    fill: $white
+    .header-wrapper
+        padding: 35px 0 0
+        transition: .3s ease
+        .flex
+            align-items: center
+            .colA
+                flex: 0 1 225px
+                @include respond-to(screen-767)
+                    flex: 0 1 125px
+                .logo
+                    img
+                        transition: .5s ease
+                        filter: invert(1)
+            .colB
+                flex: 1
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                .social-icon
+                    margin-right: 30px
+                    @include respond-to(screen-767)
+                        position: fixed
+                        bottom: 0
+                        left: 0
+                        right: 0
+                        display: flex
+                        flex-wrap: wrap
+                        background: $black2
+                        text-align: center
+                        margin: 0
+                    li
+                        display: inline-block
+                        vertical-align: middle
+                        @include respond-to(screen-767)
+                            display: block
+                            flex: 1
+                            padding: 12px 0
+                        &:not(:last-child)
+                            margin-right: 20px
+                            @include respond-to(screen-767)
+                                margin-right: 0
+                                border-right: 1px solid #ffffff6b
+                        a
+                            display: block
+                            color: $white
+                            svg
+                                display: block
+                                width: 22px
+                                fill: $white
+                                transition: .3s ease
+                                @include respond-to(screen-767)
+                                    margin: auto
+                .btn
+                    button
+                        @include respond-to(screen-520)
+                            padding: 10px 20px
+                            font-size: 14px
+
+footer
+    background: $black
+    padding: 12px 0
+    @include respond-to(screen-767)
+        padding-bottom: calc(46px + 12px)
+    .flex
+        .colA
+            flex: 0 1 12%
+            @include respond-to(screen-767)
+                flex: 0 1 125px
+            @include respond-to(screen-520)
+               display: none
+            img
+                filter: invert(1)
+                height: 100%
+                object-fit: contain
+        .colB
+            flex: 1
+            text-align: right
+            @include respond-to(screen-520)
+                text-align: center
+            a,p
+                color: $white
+            a,img
+                display: inline-block
+                vertical-align: sub
+            img
+                width: 20px
+                margin-right: 6px
+                filter: invert(1)
+//loader
+
+.loader
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #000000fa
+    z-index: 11
+    .loader-img
+        position: absolute
+        top: 50%
+        left: 50%
+        translate: -50% -50%
+        img
+            filter: invert(1)
+            max-width: 200px
+            animation: loading .5s ease infinite alternate
+            @keyframes loading
+                0%
+                    transform: scale(1.1)
+                100%
+                    transform: scale(1)

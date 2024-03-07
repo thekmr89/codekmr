@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after
+    padding: 0
+    margin: 0
+    list-style: none
+    box-sizing: border-box
+//
+$scrollwidth: 3px
+:root
+    --headerheight: value
+    --footerheight: value
+//
+body,html
+    font-family: $MonaSans
+    font-size: 16px
+    line-height: 24px
+    color: $black
+    &::-webkit-scrollbar
+        width: $scrollwidth
+        background: $white
+    &::-webkit-scrollbar-track
+        box-shadow: none
+    &::-webkit-scrollbar-thumb
+        background-color: $black
+        outline: 0
+a[href]
+    text-decoration: none
+    color: $black
+    transition: .5s ease
+    cursor: pointer
+b
+    font-weight: normal
+    font-family: $MonaSansB
+img
+    max-width: 100%
+    display: block
+    transition: .5s ease
+.container
+    max-width: 1230px
+    width: 100%
+    height: 100%
+    margin: 0 auto
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 2px
+        background: $white
+        @include respond-to(screen-767)
+            display: none
+    @include respond-to(screen-1280)
+        max-width: 100%
+        width: 90%
+        margin: 0 auto
+    @include respond-to(screen-767)
+        padding: 0 20px
+        width: 100%
+    &.container2
+        @include respond-to(screen-675)
+            padding-right: 0
+.container-fluid
+    max-width: 1330px
+    display: block
+    margin: 0 auto
+    @include respond-to(screen-1366)
+        padding: 0 25px
+    @include respond-to(screen-991)
+        padding: 0 20px
+    @include respond-to(screen-767)
+        padding: 0 15px
+h1,h2,h3,h4,h5,h6
+    font-weight: normal
+h2,h3
+    font-family: $MonaSansSB
+h4,h5,h6
+    font-family: $MonaSansM
+h1
+    font-size: 72px
+    line-height: 1
+    font-family: $Ubantu
+    font-weight: 500
+    @include respond-to(screen-1280)
+        font-size: 48px
+    @include respond-to(screen-767)
+        font-size: 32px
+h2
+    font-size: 60px
+    font-weight: 500
+    line-height: 1
+h3
+    font-size: 36px
+    line-height: 1
+    font-weight: 500
+h4
+    font-size: 24px
+    line-height: 30px
+    @include respond-to(screen-1280)
+        font-size: 22px
+h5
+    font-size: 20px
+    line-height: 1
+h6
+    font-size: 18px
+    line-height: 24px
+.text-center
+    text-align: center
+.grid
+    display: grid
+.invert
+    filter: invert(1)
+.flex
+    display: flex
+    flex-wrap: wrap
+.heading
+    h2,h3
+        font-family: $Ubantu
+    h3
+        font-size: 48px
+        line-height: 1
+        @include respond-to(screen-767)
+            font-size: 28px
+    p
+        color: $text
+        line-height: 1.4
+.custom-scroll
+    &::-webkit-scrollbar
+        width: $scrollwidth
+    &::-webkit-scrollbar-track
+        box-shadow: none
+    &::-webkit-scrollbar-thumb
+        background-color: $text
+        outline: 0
+input,button,select
+    font-size: 16px
+    line-height: 24px
+    color: $text
+
+.headerheight
+    margin-top: var(--headerheight)
+input,textarea
+    &:focus
+        outline: none
+input[type="number"]
+    -moz-appearance: textfield
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+
+.btn
+    position: relative
+    display: inline-block
+    --btnshadow: 5px
+    transform: translate3d(var(--btnshadow), var(--btnshadow), var(--btnshadow))
+    button,a,input
+        appearance: none
+        display: inline-block
+        line-height: 1
+        padding: 10px 30px
+        border: 1px solid $white
+        font-family: inherit
+        color: $white
+        background: $black2
+        cursor: pointer
+        font-family: $MonaSansSB
+        transition: .3s ease
+        position: relative
+        z-index: 1
+        transform: translate3d(calc(var(--btnshadow) * -1), calc(var(--btnshadow) * -1), var(--btnshadow))
+        &.enquire-btn
+            background: $black2
+        &:active
+            transform: translate3d(0px, 0px, 0px)
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: -1
+        background: $white
+
+
+.close
+    cursor: pointer
+    --btnsize: 50px
+    --tilt: 45deg
+    height: var(--btnsize)
+    width: var(--btnsize)
+    z-index: 1
+    .tilt1,.tilt2
+        display: block
+        position: absolute
+        top: 50%
+        translate: 0 -50%
+        left: 0
+        right: 0
+        height: 2px
+        width: 100%
+        background: $white
+    .tilt1
+        transform: rotate(var(--tilt))
+    .tilt2
+        transform: rotate(calc( var(--tilt) * -1 ))
