@@ -19,7 +19,7 @@ function App() {
       <MasterContext>
         <Header />
         <Routes>
-          <Route exact path="/codekmr" element={<Home />} />
+          <Route path="/codekmr" element={<Home />} />
           <Route path="/codekmr/thank-you" element={<Thanks />} />
         </Routes>
         <Footer />
