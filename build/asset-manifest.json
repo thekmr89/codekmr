@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/codekmr/static/css/main.5c4a1611.css",
+    "main.js": "/codekmr/static/js/main.efb578cc.js",
+    "static/js/787.af69bc51.chunk.js": "/codekmr/static/js/787.af69bc51.chunk.js",
+    "static/media/rangmanch.webp": "/codekmr/static/media/rangmanch.470cab01848cc6706541.webp",
+    "static/media/pragati.webp": "/codekmr/static/media/pragati.287b49bb2bafa1e3315d.webp",
+    "static/media/medibrand.webp": "/codekmr/static/media/medibrand.a52c440e41afa6794005.webp",
+    "static/media/mahira-homes.webp": "/codekmr/static/media/mahira-homes.cb3830aed0d17e2be09b.webp",
+    "static/media/graas.webp": "/codekmr/static/media/graas.1ab3e45237281eb65abf.webp",
+    "static/media/kga.webp": "/codekmr/static/media/kga.b8a10197189416562dd0.webp",
+    "static/media/sighetatravels.webp": "/codekmr/static/media/sighetatravels.39412b4e00472dd4357c.webp",
+    "static/media/exotic-travels.webp": "/codekmr/static/media/exotic-travels.c306e87048415f416ecf.webp",
+    "static/media/aapno-ghar.webp": "/codekmr/static/media/aapno-ghar.a75bbc5fcb2ee3f5c65b.webp",
+    "static/media/furnishandshade.webp": "/codekmr/static/media/furnishandshade.ed583ec8abb369411cef.webp",
+    "static/media/tunnelindia.webp": "/codekmr/static/media/tunnelindia.57f6efa64ba574fb16bb.webp",
+    "static/media/amc-hospital.webp": "/codekmr/static/media/amc-hospital.89116e5abf25f253aab0.webp",
+    "static/media/officetoday.webp": "/codekmr/static/media/officetoday.bce716f78723c46d64e1.webp",
+    "static/media/ishwa-consulting.webp": "/codekmr/static/media/ishwa-consulting.2b618dc89c00b10d1aa2.webp",
+    "static/media/aggarwalgupta.webp": "/codekmr/static/media/aggarwalgupta.52843ef84009049f9299.webp",
+    "static/media/MonaSans-Bold.woff": "/codekmr/static/media/MonaSans-Bold.95c3e26cd9c42ccde0c7.woff",
+    "static/media/MonaSans-Regular.woff": "/codekmr/static/media/MonaSans-Regular.c24ce6ea4d03b1f59209.woff",
+    "static/media/MonaSans-SemiBold.woff": "/codekmr/static/media/MonaSans-SemiBold.e8d2d726fd6ec9442b3e.woff",
+    "static/media/MonaSans-Light.woff": "/codekmr/static/media/MonaSans-Light.275776c7750795d4823f.woff",
+    "static/media/MonaSans-Medium.woff": "/codekmr/static/media/MonaSans-Medium.3c9fd031adb5187f477e.woff",
+    "static/media/MonaSans-ExtraBold.woff2": "/codekmr/static/media/MonaSans-ExtraBold.49d1f9ad3392c7794b27.woff2",
+    "static/media/MonaSans-Bold.woff2": "/codekmr/static/media/MonaSans-Bold.b0efd49a5cd6fc1e1396.woff2",
+    "static/media/MonaSans-Medium.woff2": "/codekmr/static/media/MonaSans-Medium.94a824cde1cd7957451e.woff2",
+    "static/media/MonaSans-Regular.woff2": "/codekmr/static/media/MonaSans-Regular.3807ab3d762b24b08313.woff2",
+    "static/media/MonaSans-SemiBold.woff2": "/codekmr/static/media/MonaSans-SemiBold.efcc41fb46f8b59561b6.woff2",
+    "static/media/MonaSans-Light.woff2": "/codekmr/static/media/MonaSans-Light.b1745c5fcd709409d9af.woff2",
+    "static/media/image.jpg": "/codekmr/static/media/image.3782c22e1c02b75b557a.jpg",
+    "static/media/logo.png": "/codekmr/static/media/logo.7019fcff5f3843d75472.png",
+    "index.html": "/codekmr/index.html",
+    "main.5c4a1611.css.map": "/codekmr/static/css/main.5c4a1611.css.map",
+    "main.efb578cc.js.map": "/codekmr/static/js/main.efb578cc.js.map",
+    "787.af69bc51.chunk.js.map": "/codekmr/static/js/787.af69bc51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c4a1611.css",
+    "static/js/main.efb578cc.js"
+  ]
+}
