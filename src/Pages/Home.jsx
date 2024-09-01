@@ -129,12 +129,6 @@ export const Home = () => {
                                         <div className="content">
                                             <p>From Gurugram, Haryana, India</p>
                                             <div className="flex">
-                                                <div className="col-ms">
-                                                    <p><b>Current Employment:</b></p>
-                                                    <p>iBrandox Online Pvt. Ltd</p>
-                                                    <p>Frontend Web Developer</p>
-                                                    <p>2022 - Present</p>
-                                                </div>
                                                 <div className="colms">
                                                     <p><b>Education:</b></p>
                                                     <p>Bachelor of Science in Computer</p>
